@@ -20,6 +20,7 @@ mkdir $new_dir
 
 # for each file in <dir>
 for f in `realpath -s $1`/*; do
+
   # if it is a .mkv
   if [ -f "$f" ] && [[ $f =~ \.mkv$ ]]; then
 
