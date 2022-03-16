@@ -29,7 +29,7 @@ function traverse() {
       done
     fi
   else
-    echo "-- has files, stoping"
+    echo " -- has files, stoping"
     mkdir `realpath -s $1`/preservation           # create the preservation directory
     for f in `realpath -s $1`/*; do               # go over the contents
       if [ -f "$f" ]; then                        # if it's a file
