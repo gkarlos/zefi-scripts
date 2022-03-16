@@ -31,7 +31,7 @@ for f in `realpath -s $1`/*; do
     number="${filename%.*}"
 
     # trim the zeroes
-    number=`printf "%d\n" $number`
+    number=$(( 10#$number ))
 
     # create new directories for the file
     mkdir "$new_dir/$new_name.$number"
